@@ -1,0 +1,138 @@
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+          scroll-behavior: smooth;
+          
+    }
+  }
+
+body{
+    margin: 0 ;
+    padding: 0; 
+    height: 100%; 
+    width: 100%;
+    padding-bottom:100px;
+    background-color: rgba(0, 0, 0 ,0.9);
+    /* background-image:url("back3.gif");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    
+    
+}
+.main{
+    display: flex;
+    width: 85%;
+    height: 80%;
+   padding: 50px;
+    margin: 0 auto;
+}
+
+#gifBox{
+    background-image:url("back.gif");
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: inline-block;
+
+    margin: 0 auto;
+    width: 800px;
+    background-color:inherit;
+    border: 1px solid;
+    justify-content: center;    
+    border-radius: 30px 0 0 30px;
+    height: 600px;
+}
+
+#formDiv{
+    display: inline-block;
+    border-radius: 0 30px 30px 0;
+    margin-top: 0%;
+    width: 500px;
+    background-color: inherit;
+    justify-content: center;    
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    border-top-style: inset;
+    border-bottom-style:dotted;
+    border-right-style:dotted;
+    background-color: rgba(0, 0, 0 ,0.3);
+    height: 600px;
+    font-size:20px;
+     font-family: "Anta";
+     color: aliceblue ;
+}
+#child{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px;
+
+}
+
+#child input{
+    background-color:blanchedalmond;
+    width: 70px;
+    height: 30px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+#child button{
+    
+    background-color:rgba(128, 128, 128 ,0.3);
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    font-size: medium;
+     font-family: "Anta";
+     color: aliceblue ;
+    
+}
+
+#info table , tr {
+   margin: 0 auto;
+   font-family:  "Anta" ;
+   padding: 30px;
+   width: 50px;
+   height: 20px;
+   background-color: inherit;
+}
+td{
+    border: 3px solid;
+    padding: 30px;
+    font-size: x-large;
+    background-color:blanchedalmond;
+
+}
+
+#warn{
+    float: left;
+    position: fixed;
+    margin-top: 30px;
+    margin-left: 30px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid orange;
+    background-color: rgba(128, 128, 128 ,0.1);
+    font-size: large;
+}
+
+.hide {
+    display: none;
+    float: left;
+    position: fixed;
+    margin: 40px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: blanchedalmond;
+    font-family: "Anta";
+  }
+  
+#warn:hover + .hide{
+    float: left;
+    clear: none;
+    display:inline-flex;
+    flex-wrap: nowrap;
+    border: 1px solid;
+} 
