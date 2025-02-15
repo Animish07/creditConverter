@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ects Converter</title>
+    <script src="script.js"></script> 
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anta">
+       
+</head>
+<body>
+    <button id="warn">&#128161</button>
+    <div  class="hide">
+        <p>This is based on the standard formula refrenced from the university website of freie berlin.<br>Your university might use some other way of coversion, therefore make sure you consult with institute </p>  
+    </div>
+<div class="main">
+  <div id="gifBox">
+    <p></p>
+  </div>
+  <div id="formDiv">
+    <form  onsubmit="formValidation(event)" id="child">
+
+        <p>Total credits of the Degree/Diploma</p>
+        <p><input type="text" id="totalCreds" required></p>
+        <p>Duration of Degree in years</p>
+        <p><input type="number" min="1" id="years" required></p>
+        <p>Name of the Course</p>
+        <p><input type="text" id="course" required style="width: 120px;"></p>
+        <p>Credit of the Course </p>
+        <p><input type="number" min="1" id="courseCred" required></p>
+        <br><br>
+        <button type="submit">Done</button>
+    </form>
+   </div>
+   <div>
+
+   </div>
+</div> 
+    <div id="info">
+     <table id="tableCreds">
+
+     </table>
+    </div>
+</body>
+</html>
